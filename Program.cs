@@ -1,6 +1,14 @@
 ﻿using System;
-double w = 25;
-double y = 13;
-double G = (9.33 * Math.Pow(w, 3) + Math.Sqrt(w)) / (Math.Log(y + 3.5) + Math.Sqrt(y));
-Console.WriteLine($"G = {G}");
-Console.ReadKey();
+{
+        Console.Write("Введите x: ");
+        double x = double.Parse(Console.ReadLine());
+        double t = -6;
+
+        double a = Math.Log10(x);
+        double b = Math.Sqrt(x * x + t * t);
+        double y = Math.Pow(Math.Abs(a - b * x), 1.0 / 5);
+        Console.WriteLine($"a = {a}");
+        Console.WriteLine($"b = {b}");
+        Console.WriteLine($"y = {y}");
+        Console.ReadKey();
+}
